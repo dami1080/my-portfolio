@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;    
+  padding: 0;
 }
 
 a {
@@ -8,57 +8,57 @@ a {
 }
 
 ul {
-  list-style: none;    
+  list-style: none;
 }
 
 header {
   position: fixed;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;    
+  align-items: center;
 }
 
 .profile {
    color: #172b4d;
    font-weight: bold;
    font-size: 45px;
-   font-family: "poppins"; 
-   line-height: 50px; 
+   font-family: "poppins";
+   line-height: 50px;
 }
 
 .dev {
-  font-family: "poppins"; 
+  font-family: "poppins";
   margin-top: 12px;
   font-size: 16px;
   line-height: 23px;
-  color: #344563;   
+  color: #344563;
 }
 
 .connect {
   margin-top: 15px;
-  color: #7f8cff;    
+  color: #7f8cff;
 }
 
 main {
-  background-image: url(./images/header-shapes\ mobile.png); 
-  background-repeat: no-repeat;  
+  background-image: url(./images/header-shapes-mobile.png);
+  background-repeat: no-repeat;
 }
 
 section ul {
-  display: flex;  
+  display: flex;
   gap: 20px;
-  margin-top: 12px;    
+  margin-top: 12px;
 }
 
 .pix {
-  height: 10px;    
+  height: 10px;
 }
 
 section {
-  margin: 128px 24px 136px 24px;    
+  margin: 128px 24px 136px 24px;
 }
 
 header a {
@@ -66,11 +66,11 @@ header a {
   margin-left: 24px;
   font-family: "poppins";
   font-weight: bold;
-  font-size: 18px;    
+  font-size: 18px;
 }
 
 .fas {
   margin-top: 58px;
   margin-right: 24px;
-  color: blue;    
+  color: blue;
 }
