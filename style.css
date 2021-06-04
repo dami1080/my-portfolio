@@ -22,15 +22,15 @@ header {
 }
 
 .profile {
-   color: #172b4d;
-   font-weight: bold;
-   font-size: 45px;
-   font-family: "poppins";
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 45px;
+   font-family: "poppins", sans-serif;
    line-height: 50px;
 }
 
 .dev {
-  font-family: "poppins";
+  font-family: "poppins" ,sans-serif;
   margin-top: 12px;
   font-size: 16px;
   line-height: 23px;
@@ -64,7 +64,7 @@ section {
 header a {
   margin-top: 58px;
   margin-left: 24px;
-  font-family: "poppins";
+  font-family: "poppins" , sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
