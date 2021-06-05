@@ -170,7 +170,6 @@ span {
   font-size: 40px;
   line-height: 52px;
   font-weight: bold;
-  line-height: 52px;
   font-family: "poppins", sans-serif;
   padding-top: 114px;
 }
@@ -228,7 +227,7 @@ span {
 }
 
 .fame {
-  font-family: "poppins," sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 500;
   color: #000;
 }
