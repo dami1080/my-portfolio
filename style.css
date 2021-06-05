@@ -29,7 +29,6 @@ header {
   font-family: "poppins", sans-serif;
   line-height: 52px;
   padding-top: 90px;
-
 }
 
 .dev {
@@ -38,7 +37,7 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .connect {
@@ -71,7 +70,7 @@ header a {
   font-family: "poppins", sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #6070FF;
+  color: #6070ff;
   line-height: 20px;
 }
 
@@ -79,5 +78,4 @@ header a {
   margin-top: 58px;
   margin-right: 24px;
   color: #6070ff;
-  
 }
