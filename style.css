@@ -81,6 +81,12 @@ header a {
 }
 
 .fas {
+  /* margin-top: 58px; */
+  margin-right: 24px;
+  color: #acb7c3
+}
+
+.bar {
   margin-top: 58px;
   margin-right: 24px;
   color: #6070ff;
@@ -191,6 +197,7 @@ span {
 .container {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -209,7 +216,6 @@ span {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 12px;
 }
 
 .dropdown-menu {
@@ -254,13 +260,18 @@ span {
 }
 
 body {
-  background-color: #f7f7f9;
+  
   position: relative;
 }
 
 .bon:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.bon:active {
+  color: #fff;
+  background-color: #2230d2;
 }
 
 footer, form {
