@@ -273,7 +273,11 @@ body {
   background-color: #2230d2;
 }
 
-footer, 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -310,7 +314,16 @@ footer button {
   width: 140px;
 }
 
-input, 
+input {
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
 textarea {
   border-radius: 8px;
   padding: 15px 38px 15px 16px;
