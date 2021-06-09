@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -184,20 +188,6 @@ span {
   color: #344563;
 }
 
-.resume {
-  margin-top: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: "poppins", sans-serif;
-  border-radius: 8px;
-  border: 1px solid #7f8cff;
-  font-size: 17px;
-  background-color: #fff;
-  box-sizing: border-box;
-  padding: 12px;
-  color: #396df2;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -271,4 +261,55 @@ body {
 .bon:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+footer, form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 103px 24px 32px 24px;
+  background-color: #6070ff;
+  background-image: url(./images/contact-form.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-top-left-radius: 80px;
+}
+
+footer h1 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+  text-align: center;
+} 
+
+footer p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 48px;
+  color: #ebebff;
+  text-align: center;
+}
+
+footer button {
+  width: 140px;
+}
+
+input, textarea {
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
+#user-email {
+  margin-top: 20px;
+  margin-bottom: 18px;
 }
