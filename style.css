@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -77,6 +81,11 @@ header a {
 }
 
 .fas {
+  margin-right: 24px;
+  color: #acb7c3;
+}
+
+.bar {
   margin-top: 58px;
   margin-right: 24px;
   color: #6070ff;
@@ -184,23 +193,10 @@ span {
   color: #344563;
 }
 
-.resume {
-  margin-top: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: "poppins", sans-serif;
-  border-radius: 8px;
-  border: 1px solid #7f8cff;
-  font-size: 17px;
-  background-color: #fff;
-  box-sizing: border-box;
-  padding: 12px;
-  color: #396df2;
-}
-
 .container {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -219,7 +215,6 @@ span {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 12px;
 }
 
 .dropdown-menu {
@@ -264,11 +259,78 @@ span {
 }
 
 body {
-  background-color: #f7f7f9;
   position: relative;
 }
 
 .bon:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.bon:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 24px 32px 24px;
+  background-color: #6070ff;
+  background-image: url(./images/contact-form.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-top-left-radius: 80px;
+}
+
+footer h1 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 48px;
+  color: #ebebff;
+  text-align: center;
+}
+
+footer button {
+  width: 140px;
+}
+
+input {
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
+#user-email {
+  margin-top: 20px;
+  margin-bottom: 18px;
 }

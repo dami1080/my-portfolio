@@ -17,7 +17,7 @@
             <header>
              <a href="#">My Logo</a>
                 <nav>
-                 <i class="fas fa-bars"></i>
+                 <i class="bar fas fa-bars"></i>
                 </nav>
             </header>
             <section>
@@ -75,7 +75,10 @@
                        <li class="btn">css</li>
                        <li class="btn">javascript</li>
                    </ul>
-                   <button type="button" class="bon">See Project</button>
+                   <div>
+                    <button type="button" class="bon">See Project</button>
+                   </div>
+                   
                 </li>
                 <li class="project-card">
                     <img src="./images/project-1.png" class="pix" alt="snap">
@@ -92,7 +95,9 @@
                         <li class="btn">css</li>
                         <li class="btn">javascript</li>
                     </ul>
-                    <button type="button" class="bon">See Project</button>
+                    <div>
+                        <button type="button" class="bon">See Project</button>
+                    </div>
                 </li>
                 <li class="project-card">
                     <img src="./images/project-2.png" class="pix" alt="snap">
@@ -109,7 +114,9 @@
                         <li class="btn">css</li>
                         <li class="btn">javascript</li>
                     </ul>
-                    <button type="button" class="bon">See Project</button>
+                    <div>
+                        <button type="button" class="bon">See Project</button>
+                    </div>
                 </li>
                 <li class="project-card">
                     <img src="./images/project-3.png" class="pix" alt="snap">
@@ -126,7 +133,9 @@
                         <li class="btn">css</li>
                         <li class="btn">javascript</li>
                     </ul>
-                    <button type="button" class="bon">See Project</button>
+                    <div>
+                        <button type="button" class="bon">See Project</button>
+                    </div>
                 </li>        
            </ul> 
         </section>
@@ -162,7 +171,7 @@
                         </a>
                     </li>
                 </ul>
-                <button type="button" class="resume">Get my resume</button>
+                <button type="button" class="bon">Get my resume</button>
             </div>
             <ul class="container">
                 <li>
@@ -195,5 +204,15 @@
                 </li>
             </ul>
         </section>
+        <footer>
+          <h1>Contact me</h1>
+          <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+          <form action="https://formspree.io/f/mqkwbzqd" method="post">
+            <input type="text" id="user-name" name="name" maxlength="30" placeholder="Name" required>
+            <input type="email" id="user-email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="user@mail.com" required>
+            <textarea maxlength="500" placeholder="Write your message here" rows="5" required></textarea>
+            <button type="submit" class="bon">Get in Touch</button>
+          </form>
+        </footer>
     </body>
 </html>
