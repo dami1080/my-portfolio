@@ -50,7 +50,7 @@ git clone -b contact-form https://github.com/dami1080/my-portfolio/tree/main
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AkashaRojee/portfolio/issues).
+Feel free to check the [issues page](https://github.com/dami1080/my-portfolio/issues).
 
 ## Show your support
 
