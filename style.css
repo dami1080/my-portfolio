@@ -81,7 +81,6 @@ header a {
 }
 
 .fas {
-  /* margin-top: 58px; */
   margin-right: 24px;
   color: #acb7c3;
 }
@@ -273,17 +272,14 @@ body {
   background-color: #2230d2;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-}
-
 form {
   display: flex;
   flex-direction: column;
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   padding: 103px 24px 32px 24px;
   background-color: #6070ff;
   background-image: url(./images/contact-form.png);
