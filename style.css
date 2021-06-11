@@ -5,6 +5,7 @@
 
 html {
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 
 a {
@@ -17,13 +18,13 @@ ul {
 
 header {
   position: fixed;
+  background-color: white;
   top: 0;
-  background-color: #fff;
   width: 100%;
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  justify-content: space-between;
 }
 
 .profile {
@@ -47,7 +48,7 @@ header {
 .connect {
   font-size: 16px;
   color: #7f8cff;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 24px;
   margin-bottom: 24px;
   font-family: "poppins", sans-serif;
@@ -57,7 +58,7 @@ main {
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-color: #fff;
-  border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 150px;
 }
 
 section ul {
@@ -67,10 +68,14 @@ section ul {
 }
 
 section {
-  margin: 128px 24px 136px 24px;
+  margin: 128px 10% 136px 10%;
 }
 
-header a {
+.top {
+  padding-bottom: 138px;
+}
+
+.logo {
   margin-top: 58px;
   margin-left: 24px;
   font-family: "poppins", sans-serif;
@@ -92,7 +97,7 @@ header a {
 }
 
 .project {
-  margin: 114px 24px 114px 24px;
+  /* margin: 114px 24px 114px 24px; */
   display: grid;
   gap: 88px;
 }
@@ -103,12 +108,15 @@ header a {
   padding: 16px;
   border: 1px solid #dfe1e6;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .pix {
   height: 220px;
   width: 100%;
+  display: unset;
 }
 
 .project-title {
@@ -174,6 +182,14 @@ span {
   box-sizing: border-box;
   padding: 12px;
   color: #396df2;
+}
+
+.myself {
+  background-color: #fff;
+  border-top-right-radius: 80px;
+  padding-bottom: 150px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .about-myself {
@@ -251,7 +267,6 @@ span {
 }
 
 .java {
-  padding-left: 16px;
   margin-top: 12px;
   font-family: "poppins", sans-serif;
   font-size: 16px;
@@ -259,6 +274,7 @@ span {
 }
 
 body {
+  background-color: #f7f7f9;
   position: relative;
 }
 
@@ -333,4 +349,167 @@ textarea {
 #user-email {
   margin-top: 20px;
   margin-bottom: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  .fa-bars::before {
+    display: none;
+  }
+
+  .nav-color {
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 25px;
+  }
+
+  .nav-link {
+    color: #344563;
+  }
+
+  .logo {
+    margin-top: 25px;
+    padding-left: 100px;
+  }
+
+  .nav-list {
+    display: flex;
+    padding-right: 100px;
+  }
+
+  main {
+    background-image: url(./images/header-bg-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 0 250px 0 250px;
+  }
+
+  .profile {
+    font-size: 48px;
+    width: 400px;
+    line-height: 60px;
+    padding-top: 200px;
+    color: #091e42;
+  }
+
+  .dev {
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    width: 100%;
+  }
+
+  .pix {
+    display: none;
+  }
+
+  .snap {
+    display: unset;
+  }
+
+  .bon {
+    margin-top: 50px;
+  }
+
+  .card-img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+  }
+
+  .flex-order {
+    order: 2;
+  }
+
+  .about-content {
+    display: flex;
+  }
+
+  .about {
+    width: 50%;
+  }
+
+  .project-card {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .project-description {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pressed {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 12px;
+  }
+
+  span img {
+    margin-right: 12px;
+  }
+
+  .myself {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+
+  footer {
+    background-image: url(./images/contact-bg-desktop.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 24px 127px 24px;
+  }
+
+  footer p {
+    width: 40%;
+  }
+
+  form {
+    text-align: center;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+
+  .snap {
+    display: none;
+  }
+
+  .ruby-on-rail {
+    display: none;
+  }
 }
