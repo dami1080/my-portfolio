@@ -18,9 +18,6 @@ What i did  in this project:
 - HTML
 - CSS
 
-## Live Demo
-
-[Live Demo Link](https://github.com/dami1080/)
 
 ## Getting Started
 
@@ -50,7 +47,3 @@ Feel free to check the [issues page](https://github.com/dami1080/my-portfolio/is
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
