@@ -18,7 +18,7 @@ ul {
 
 header {
   position: fixed;
-  background-color:white;
+  background-color: white;
   top: 0;
   width: 100%;
   padding: 1rem 0;
@@ -352,7 +352,6 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
-
   .fa-bars:before {
     display: none;
   }
@@ -384,7 +383,7 @@ textarea {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
-    padding: 0px 250px 0px 250px;
+    padding: 0 250px 0 250px;
   }
 
   .profile {
@@ -405,6 +404,7 @@ textarea {
   .pix {
     display: none;
   }
+
   .snap {
     display: unset;
   }
@@ -478,7 +478,6 @@ textarea {
     text-align: center;
     width: 400px;
   }
-    
 }
 
 @media screen and (max-width: 800px) {
