@@ -352,10 +352,10 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
-  .fa-bars:before {
+  .fa-bars::before {
     display: none;
   }
-  
+
   .nav-color {
     padding: 10px 12px;
     font-weight: 500;
@@ -367,7 +367,7 @@ textarea {
   .nav-link {
     color: #344563;
   }
-  
+
   .logo {
     margin-top: 25px;
     padding-left: 100px;
