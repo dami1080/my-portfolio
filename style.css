@@ -68,7 +68,7 @@ section ul {
 }
 
 section {
-  margin: 128px 40px 136px 40px;
+  margin: 128px 10% 136px 10%;
 }
 
 .top {
@@ -97,7 +97,7 @@ section {
 }
 
 .project {
-  margin: 114px 24px 114px 24px;
+  /* margin: 114px 24px 114px 24px; */
   display: grid;
   gap: 88px;
 }
@@ -366,6 +366,12 @@ textarea {
 
   .nav-link {
     color: #344563;
+    transition-property: font-size;
+    transition-duration: 2.5s;
+  }
+
+  .nav-link:hover {
+    font-size: 18px;
   }
 
   .logo {
@@ -415,14 +421,15 @@ textarea {
 
   .card-img {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
   }
 
   .card-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 45%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
 
   .flex-order {
@@ -439,6 +446,7 @@ textarea {
 
   .project-card {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .project-description {
