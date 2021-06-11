@@ -440,6 +440,22 @@ textarea {
     padding: 20px;
   }
 
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+  }
+
+  span {
+    margin-left: 12px;
+    font-weight: 400;
+  }
+
+  span img {
+    margin-right: 12px;
+  }
+
   .flex-order {
     order: 2;
   }
