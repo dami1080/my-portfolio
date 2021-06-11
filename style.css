@@ -366,11 +366,31 @@ textarea {
 
   .nav-link {
     color: #344563;
+    transition-property: font-size;
+    transition-duration: 2.5s;
+  }
+
+  .nav-link:hover {
+    font-size: 18px;
   }
 
   .logo {
     margin-top: 25px;
     padding-left: 100px;
+    animation-name: logo-rotate;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes logo-rotate {
+    from {
+      opacity: 0;
+      transform: perspective(100px) rotateX(0deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: perspective(100px) rotateX(360deg);
+    }
   }
 
   .nav-list {
@@ -417,12 +437,6 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 50%;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
     padding: 20px;
   }
 
@@ -445,24 +459,6 @@ textarea {
 
   .project-description {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .pressed {
-    color: #fff;
-    background-color: #2230d2;
-  }
-
-  span {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    margin-left: 12px;
-  }
-
-  span img {
-    margin-right: 12px;
   }
 
   .myself {
