@@ -8,11 +8,9 @@
 
 What i did  in this project:
 
-1. Build contact form
+1. Build desktop version
 
-* Pair programming with my coding partner
-* Collect form data using Formspree
-* Use HTML5 validation
+* Use media query for desktop view
 
 
 ## Built With
@@ -22,7 +20,7 @@ What i did  in this project:
 
 ## Live Demo
 
-[Live Demo Link](https://github.com/dami1080/my-portfolio/tree/contact-form)
+[Live Demo Link](https://github.com/dami1080/)
 
 ## Getting Started
 
@@ -30,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 
 Use the following command in your terminal:
 
-* **To clone the contact-form branch**
+* **To clone the desktop-version branch**
 
 git clone -b contact-form https://github.com/dami1080/my-portfolio/tree/main
 
@@ -42,9 +40,6 @@ git clone -b contact-form https://github.com/dami1080/my-portfolio/tree/main
 - Twitter: [@dareakintoye](https://twitter.com/DareAkintoye)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/damilare-akintoyee-7b2248174/)
 
-👤 **Akasha Rojee**
-
-- GitHub: [@AkashaRojee](https://github.com/AkashaRojee)
 
 ## 🤝 Contributing
 
