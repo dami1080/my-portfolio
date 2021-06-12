@@ -351,7 +351,7 @@ textarea {
   margin-bottom: 18px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .fa-bars::before {
     display: none;
   }
@@ -438,6 +438,7 @@ textarea {
     width: 50%;
   }
 
+  
   .project-card {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -458,6 +459,11 @@ textarea {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    margin-left: 12px;
+  }
+
+  span img {
+    margin-right: 12px;
   }
 
   .myself {
