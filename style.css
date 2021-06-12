@@ -68,7 +68,7 @@ section ul {
 }
 
 section {
-  margin: 128px 40px 136px 40px;
+  margin: 128px 10% 136px 10%;
 }
 
 .top {
@@ -97,7 +97,7 @@ section {
 }
 
 .project {
-  margin: 114px 24px 114px 24px;
+  /* margin: 114px 24px 114px 24px; */
   display: grid;
   gap: 88px;
 }
@@ -415,14 +415,15 @@ textarea {
 
   .card-img {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
   }
 
   .card-content {
-    padding-left: 20px;
-    padding-right: 20px;
     display: flex;
     flex-direction: column;
+    width: 45%;
+    padding: 20px;
   }
 
   .flex-order {
@@ -437,12 +438,30 @@ textarea {
     width: 50%;
   }
 
+  .project-description {
+    font-weight: 500;
+  }
+
   .project-card {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .project-description {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pressed {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .myself {
