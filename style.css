@@ -437,11 +437,7 @@ textarea {
   .about {
     width: 50%;
   }
-
-  .project-description {
-    font-weight: 500;
-  }
-
+  
   .project-card {
     flex-wrap: nowrap;
     justify-content: space-between;
