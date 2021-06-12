@@ -351,7 +351,7 @@ textarea {
   margin-bottom: 18px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .fa-bars::before {
     display: none;
   }
@@ -440,6 +440,15 @@ textarea {
     width: 50%;
   }
 
+  span {
+    font-weight: 400;
+    margin-left: 12px;
+  }
+
+  span img {
+    margin-right: 12px;
+  }
+
   .card-content {
     width: 45%;
     display: flex;
@@ -465,7 +474,7 @@ textarea {
   }
 
   .project-description {
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .myself {
