@@ -377,7 +377,6 @@ textarea {
   .logo {
     margin-top: 25px;
     padding-left: 100px;
-
     animation-name: logo-rotate;
     animation-duration: 2.5s;
   }
