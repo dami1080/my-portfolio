@@ -90,9 +90,14 @@ section {
   color: #acb7c3;
 }
 
-.bar {
+.hamburger {
   margin-top: 58px;
   margin-right: 24px;
+  background-color: white;
+  border: 0;
+}
+
+.hamburger i {
   color: #6070ff;
 }
 
