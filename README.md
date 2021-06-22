@@ -17,6 +17,7 @@ What i did  in this project:
 
 - HTML
 - CSS
+- JS
 
 
 ## Getting Started
@@ -41,6 +42,9 @@ git clone -b contact-form https://github.com/dami1080/my-portfolio/tree/main
 - Twitter: [@dareakintoye](https://twitter.com/DareAkintoye)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/damilare-akintoyee-7b2248174/)
 
+👤 **Elmar Abdulkarimov**
+
+- GitHub: [@elmar8287](https://github.com/elmar8287)
 
 ## 🤝 Contributing
 
