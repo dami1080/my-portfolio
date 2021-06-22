@@ -547,7 +547,7 @@ textarea {
     bottom: 0;
     right: 0;
     background: #6070ff;
-    padding: 33px 38px 0px 28px;
+    padding: 33px 38px 0 28px;
     flex-direction: column;
   }
 
