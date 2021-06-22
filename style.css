@@ -99,14 +99,13 @@ section {
 
 header .nav-list {
   display: flex;
-  
 }
 
 header .nav-list .close-menu {
   display: none;
 }
 
-header .nav-list li{
+header .nav-list li {
   margin-right: 32px;
 }
 
@@ -531,11 +530,11 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
-  header .nav-list{
+  header .nav-list {
     display: none;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
     margin-top: 0;
   }
@@ -547,12 +546,12 @@ textarea {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #6070FF;
+    background: #6070ff;
     padding: 33px 38px 0px 28px;
     flex-direction: column;
   }
 
-  header .mobileMenu .close-menu{
+  header .mobileMenu .close-menu {
     display: flex;
     width: 100%;
     justify-content: flex-end;
