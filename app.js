@@ -249,7 +249,7 @@ function seeProjectButton(i) {
   popupButtonGithubLink.className = 'btn-project';
   popupButtonDIV.appendChild(popupButtonGithubLink);
   const popupButtonGithubIcon = document.createElement('img');
-  popupButtonGithubIcon.src = 'images/icon-github-purple.png';
+  popupButtonGithubIcon.src = 'images/icon-github-details.png';
   popupButtonGithubLink.appendChild(popupButtonGithubIcon);
 }
 
