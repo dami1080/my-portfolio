@@ -1,7 +1,154 @@
-const openMenuBtn = document.querySelector("header .hamburger i");
-const menuBlock = document.querySelector("header .nav-list");
-const closeMenuBtn = document.querySelector("header .close-menu i");
-const menuItems = [...document.querySelectorAll("header .nav-list li a")]; 
-openMenuBtn.addEventListener("click", () => menuBlock.classList.add("mobileMenu"));
-closeMenuBtn.addEventListener("click", () => menuBlock.classList.remove("mobileMenu"));
-menuItems.forEach(item => item.addEventListener("click", () => menuBlock.classList.remove("mobileMenu")))
+const body = document.getElementById('body-project');
+const menu = document.createElement('div');
+menu.className = 'menu-style';
+body.appendChild(menu);
+
+const icon = document.createElement('i');
+icon.className = 'fas fa-times';
+menu.appendChild(icon);
+
+const menuList = document.createElement('ul');
+menuList.className = 'menu-list';
+menu.appendChild(menuList);
+
+const portfolio = document.createElement('li');
+portfolio.className = 'portfolio';
+const portfolioLink = document.createElement('a');
+portfolioLink.className = 'mobile-link';
+portfolioLink.textContent = 'Portfolio';
+portfolioLink.href = '#portfolio';
+portfolio.appendChild(portfolioLink);
+menuList.appendChild(portfolio);
+
+const about = document.createElement('li');
+about.className = 'about';
+const aboutLink = document.createElement('a');
+aboutLink.className = 'mobile-link';
+aboutLink.textContent = 'About';
+aboutLink.href = '#about';
+about.appendChild(aboutLink);
+menuList.appendChild(about);
+
+const contact = document.createElement('li');
+contact.className = 'contatc-content';
+const contactLink = document.createElement('a');
+contactLink.className = 'mobile-link';
+contactLink.textContent = 'Contact';
+contactLink.href = '#contact';
+contact.appendChild(contactLink);
+menuList.appendChild(contact);
+
+const hamburger = document.getElementById('mob-menu');
+hamburger.addEventListener('click', () => {
+  menu.style.display = 'block';
+  document.getElementById('main').style.filter = 'blur(5px)';
+});
+
+icon.addEventListener('click', () => {
+  menu.style.display = 'none';
+  document.getElementById('main').style.filter = 'none';
+});
+
+document
+  .getElementsByClassName('mobile-link')[0]
+  .addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.getElementById('main').style.filter = 'none';
+    document.getElementsByClassName('card');
+  });
+
+document
+  .getElementsByClassName('mobile-link')[1]
+  .addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.getElementById('main').style.filter = 'none';
+  });
+
+document
+  .getElementsByClassName('mobile-link')[2]
+  .addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.getElementById('main').style.filter = 'none';
+  });
+
+// =======================================================================
+// --------------------- Details popup window MOBILE----------------------
+// =======================================================================
+
+// ************Create HTML- project section************
+
+function ProjectCard(
+  imageLink,
+  imageAltText,
+  title,
+  descriptionName,
+  descriptionPosition,
+  descriptionYear,
+  descriptionContetnt,
+  technologies,
+) {
+  this.image = {
+    link: imageLink,
+    altText: imageAltText,
+  };
+  this.title = title;
+  this.descriptionName = descriptionName;
+  this.descriptionPosition = descriptionPosition;
+  this.descriptionYear = descriptionYear;
+  this.descriptionContetnt = descriptionContetnt;
+  this.technologies = technologies;
+}
+
+const myProjects = [];
+
+myProjects.push(
+  new ProjectCard(
+    'images/image1.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ['html', 'css', 'javaScript'],
+  ),
+);
+
+myProjects.push(
+  new ProjectCard(
+    'images/image2.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ['html', 'css', 'javaScript'],
+  ),
+);
+
+myProjects.push(
+  new ProjectCard(
+    'images/image3.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ['html', 'css', 'javaScript'],
+  ),
+);
+
+myProjects.push(
+  new ProjectCard(
+    'images/image4.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ['html', 'css', 'javaScript'],
+  ),
+);
