@@ -231,3 +231,25 @@ function seeProjectButton(i) {
     popupCardTechnologie.textContent = element;
     popupCardTechnologiesList.appendChild(popupCardTechnologie);
   });
+
+  const popupButtonDIV = document.createElement('div');
+  popupButtonDIV.className = 'popup-button-div';
+  popupCardContentDIV.appendChild(popupButtonDIV);
+  const popupButtonLiveLink = document.createElement('a');
+  popupButtonLiveLink.className = 'btn-project';
+  popupButtonLiveLink.textContent = 'See Live';
+  popupButtonLiveLink.href = '#';
+  popupButtonDIV.appendChild(popupButtonLiveLink);
+  const popupButtonLiveIcon = document.createElement('img');
+  popupButtonLiveIcon.src = 'images/icon-live.png';
+  popupButtonLiveLink.appendChild(popupButtonLiveIcon);
+  const popupButtonGithubLink = document.createElement('a');
+  popupButtonGithubLink.textContent = 'See Source';
+  popupButtonGithubLink.href = '#';
+  popupButtonGithubLink.className = 'btn-project';
+  popupButtonDIV.appendChild(popupButtonGithubLink);
+  const popupButtonGithubIcon = document.createElement('img');
+  popupButtonGithubIcon.src = 'images/icon-github-purple.png';
+  popupButtonGithubLink.appendChild(popupButtonGithubIcon);
+}
+
