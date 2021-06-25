@@ -253,3 +253,38 @@ function seeProjectButton(i) {
   popupButtonGithubLink.appendChild(popupButtonGithubIcon);
 }
 
+for (let i = 0; i < myProjects.length; i += 1) {
+    const cardList = document.createElement('li');
+    cardList.className = 'card';
+    cardUL.appendChild(cardList);
+  
+    const cardImage = document.createElement('img');
+    cardImage.className = `card-image${i}`;
+    cardImage.src = myProjects[i].image.link;
+    cardImage.altText = myProjects[i].image.altText;
+    cardList.appendChild(cardImage);
+  
+    const cardContent = document.createElement('div');
+    cardContent.className = 'card-content';
+    cardList.appendChild(cardContent);
+  
+    const cardTitle = document.createElement('h2');
+    cardTitle.className = 'card-title';
+    cardTitle.textContent = myProjects[i].title;
+    cardContent.appendChild(cardTitle);
+  
+    const cardDescription = document.createElement('p');
+    cardDescription.className = 'card-description';
+    cardDescription.textContent = `${myProjects[i].descriptionName}`;
+    cardContent.appendChild(cardDescription);
+  
+    const cardSpan = document.createElement('span');
+    cardSpan.textContent = `${myProjects[i].descriptionPosition} `;
+    cardSpan.className = 'dot';
+    cardDescription.appendChild(cardSpan);
+  
+    const cardSpanTwo = document.createElement('span');
+    cardSpanTwo.textContent = `${myProjects[i].descriptionYear}`;
+    cardDescription.appendChild(cardSpanTwo);
+  
+
