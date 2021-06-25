@@ -63,11 +63,12 @@ body {
 }
 
 main {
-  height: 100vh;
-  background-image: url("../images/header-shapes\ mobile.png");
+  height: 130vh;
+  background-image: url("./images/header-bg.png");
   background-repeat: no-repeat;
   background-color: #fff;
   border-bottom-left-radius: 80px;
+  background-size: contain;
 }
 
 header {
@@ -118,6 +119,7 @@ header nav ul {
   font-size: 40px;
   line-height: 52px;
   word-wrap: break-word;
+  padding-top: 150px;
 }
 
 section p {
@@ -353,7 +355,11 @@ section .main-text {
 }
 
 .about-myself .skills p {
-  margin-top: 0;
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 12px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
 }
 
 .skills {
@@ -401,9 +407,8 @@ section .main-text {
 }
 
 .contact {
-  background-image: url("../images/contact-form-bg-mobile-size.png");
+  background-image: url("./images/contact-form.png");
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: 147px 21px;
   background-color: #6070ff;
   padding-left: 24px;
@@ -520,7 +525,7 @@ textarea {
 
   .section-top {
     margin: 0;
-    background-image: url("../images/header-shapes-desktop.png");
+    background-image: url("./images/header-shapes-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 90vw 74vh;
@@ -688,10 +693,11 @@ textarea {
   }
 
   .contact {
-    background-image: url("../images/footer-desktop.png");
-    background-position: center;
+    background-image: url("./images/contact-bg-desktop.png");
+    background-position: top;
     border-top-left-radius: 150px;
     padding: 142px 24px 127px 24px;
+    background-size: contain;
   }
 
   footer .contact-section-text-content {
