@@ -152,3 +152,82 @@ myProjects.push(
     ['html', 'css', 'javaScript'],
   ),
 );
+
+const projectSection = document.getElementById('portfolio');
+const cardUL = document.createElement('ul');
+cardUL.className = 'cards-project-list';
+projectSection.appendChild(cardUL);
+
+function seeProjectButton(i) {
+  const main = document.getElementById('main');
+  const popupBackground = document.createElement('div');
+  popupBackground.classList.add('popup-background');
+  main.appendChild(popupBackground);
+
+  const popupMobileCard = document.createElement('div');
+  popupMobileCard.className = 'popup-mobile-card cards-project-list card';
+  popupMobileCard.style.display = 'block';
+  popupBackground.appendChild(popupMobileCard);
+
+  const popupCardTop = document.createElement('div');
+  popupCardTop.className = 'popup-card-top';
+  popupMobileCard.appendChild(popupCardTop);
+
+  const popupCardTitle = document.createElement('h2');
+  popupCardTitle.className = 'card-title';
+  popupCardTitle.textContent = `${myProjects[i].title}`;
+  popupCardTop.appendChild(popupCardTitle);
+
+  const popupClose = document.createElement('i');
+  popupClose.addEventListener('click', () => {
+    main.removeChild(popupBackground);
+  });
+  popupClose.className = 'fas fa-times popupCLose';
+  popupCardTop.appendChild(popupClose);
+
+  const popupCardDescription = document.createElement('p');
+  popupCardDescription.className = 'card-description';
+  popupCardDescription.textContent = `${myProjects[i].descriptionName}`;
+  popupMobileCard.appendChild(popupCardDescription);
+
+  const popupCardSpan = document.createElement('span');
+  popupCardSpan.textContent = `${myProjects[i].descriptionPosition}`;
+  popupCardSpan.className = 'dot';
+  popupCardDescription.appendChild(popupCardSpan);
+
+  const cardSpanTwo = document.createElement('span');
+  cardSpanTwo.textContent = `${myProjects[i].descriptionYear}`;
+  popupCardDescription.appendChild(cardSpanTwo);
+
+  const popupCardImage = document.createElement('img');
+  popupCardImage.className = `card-image${i}`;
+  popupCardImage.id = 'popupimage';
+  popupCardImage.className = 'popup-image';
+  popupCardImage.src = myProjects[i].image.link;
+  popupCardImage.altText = myProjects[i].image.altText;
+  popupMobileCard.appendChild(popupCardImage);
+
+  const popupCardContent = document.createElement('div');
+  popupCardContent.className = 'card-content';
+  popupCardContent.id = 'popup-content';
+  popupMobileCard.appendChild(popupCardContent);
+
+  const popupCardDescriptionContent = document.createElement('p');
+  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+  popupCardDescriptionContent.className = 'card-text-content';
+  popupCardContent.appendChild(popupCardDescriptionContent);
+
+  const popupCardContentDIV = document.createElement('div');
+  popupCardContentDIV.className = 'popup-card-div';
+  popupCardContent.appendChild(popupCardContentDIV);
+
+  const popupCardTechnologiesList = document.createElement('ul');
+  popupCardTechnologiesList.className = 'butonns-languages';
+  popupCardContentDIV.appendChild(popupCardTechnologiesList);
+
+  myProjects[i].technologies.forEach((element) => {
+    const popupCardTechnologie = document.createElement('li');
+    popupCardTechnologie.className = 'btn-lg';
+    popupCardTechnologie.textContent = element;
+    popupCardTechnologiesList.appendChild(popupCardTechnologie);
+  });
