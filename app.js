@@ -286,5 +286,31 @@ for (let i = 0; i < myProjects.length; i += 1) {
     const cardSpanTwo = document.createElement('span');
     cardSpanTwo.textContent = `${myProjects[i].descriptionYear}`;
     cardDescription.appendChild(cardSpanTwo);
+
+    const cardDescriptionContent = document.createElement('p');
+  cardDescriptionContent.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+  cardDescriptionContent.className = 'card-text-content';
+  cardContent.appendChild(cardDescriptionContent);
+
+  const cardTechnologiesList = document.createElement('ul');
+  cardTechnologiesList.className = 'butonns-languages';
+  cardContent.appendChild(cardTechnologiesList);
+
+  myProjects[i].technologies.forEach((element) => {
+    const cardTechnologie = document.createElement('li');
+    cardTechnologie.className = 'btn-lg';
+    cardTechnologie.textContent = element;
+    cardTechnologiesList.appendChild(cardTechnologie);
+  });
+
+  const cardButton = document.createElement('button');
+  cardButton.className = 'btn-project';
+  cardButton.textContent = 'See Project';
+  cardContent.appendChild(cardButton);
+  cardButton.id = i;
+  cardButton.addEventListener('click', (e) => {
+    seeProjectButton(e.target.id);
+  });
+}
   
 
