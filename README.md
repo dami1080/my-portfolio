@@ -4,15 +4,6 @@
 
 > Portfolio of Microverse projects
 
-
-
-What i did  in this project:
-
-1. Build desktop version
-
-* Use media query for desktop view
-
-
 ## Built With
 
 - HTML
@@ -40,7 +31,6 @@ git clone -b contact-form https://github.com/dami1080/my-portfolio/tree/main
 
 - GitHub: [@dami1080](https://github.com/dami1080)
 - Twitter: [@dareakintoye](https://twitter.com/DareAkintoye)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/damilare-akintoyee-7b2248174/)
 
 👤 **Elmar Abdulkarimov**
 
