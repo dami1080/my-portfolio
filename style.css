@@ -234,6 +234,8 @@ section .main-text {
   outline: none;
 }
 
+
+
 .btn-project:hover {
   color: #fff;
   background-color: #6070ff;
@@ -296,7 +298,8 @@ section .main-text {
 
 .popup-mobile-card .popup-button-div {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  /* justify-content: space-between; */
 }
 
 .popup-mobile-card .popup-button-div .btn-project {
@@ -309,6 +312,7 @@ section .main-text {
 .popup-mobile-card .popup-button-div .btn-project a {
   color: #396df2;
   font-weight: 500;
+
 }
 
 .popup-card-top {
@@ -633,7 +637,9 @@ textarea {
   }
 
   #popupimage {
-    width: 100% !important;
+    max-width: 100%;
+    display: block;
+    margin: auto;
   }
 
   /* --------Popup START--------- */
