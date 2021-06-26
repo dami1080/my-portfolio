@@ -350,6 +350,36 @@ window.addEventListener('load', () => {
   }
 });
 
+// GET FORM DATA FROM LOCAL STORAGE
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('contactInfo'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('contactInfo'));
+    emailInput.value = email;
+    nameInput.value = name;
+    messageInput.value = message;
+  }
+});
+
+inputsArray.forEach((input) => input.addEventListener('input', (e) => {
+  if (input === nameInput) {
+    nameInput.value = input.value;
+  } else if (input === emailInput) {
+    emailInput.value = input.value;
+    // VALIDATION EMAIL INPUT
+    if (e.target.value !== emailInput.value.toLowerCase()) {
+      e.preventDefault();
+      emailInput.parentElement.classList.add('invalidInput');
+    } else {
+      saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+      emailInput.parentElement.classList.remove('invalidInput');
+    }
+  } else {
+    messageInput.value = input.value;
+  }
+  saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+}));
+
+
 
 
 
