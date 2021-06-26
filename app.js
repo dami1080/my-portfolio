@@ -327,4 +327,31 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+// SAVE FORM CONTACT DATA TO LOCAL STORAGE
+function saveFormDataToLocalStorage(name, email, message) {
+  const contactInfo = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
+}
+// GET FORM ELEMENTS
+const nameInput = document.querySelector('footer form input[type="text"]');
+const messageInput = document.querySelector('footer form textarea');
+const inputsArray = [emailInput, nameInput, messageInput];
+// GET FORM DATA FROM LOCAL STORAGE
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('contactInfo'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('contactInfo'));
+    emailInput.value = email;
+    nameInput.value = name;
+    messageInput.value = message;
+  }
+});
+
+
+
+
+
 
